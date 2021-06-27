@@ -1,0 +1,243 @@
+$fontcolor : white;
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Yellowtail&display=swap');
+$fontstyle :'Rock Salt', cursive;
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* this is the hero section*/
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: $fontcolor;
+    margin-top: 0%;
+    
+}
+
+.name{
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.05em;
+    font-family: 'Rock Salt', cursive;
+    
+}
+
+h2{
+    font-family: 'Rock Salt', cursive;
+}
+
+.hero .btn{
+    display: block;
+    width: 26vh;
+    border: $fontcolor solid;
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10vh;
+    text-decoration: none;
+    color: $fontcolor;
+    font-size: 3vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+/*This is the nav*/
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    text-align: center;
+    margin-left: 0%;   
+}
+
+li{
+    margin: 6vh;
+    font-size: 14pt;
+}
+
+li a{
+    text-decoration: none;
+    color: $fontcolor;
+}
+
+/*This is the Menu*/
+
+.course{
+    border: black solid 1pt;
+    display: flex;
+    justify-content: center;
+    margin: 20vh;
+    padding: 2vh;
+    background-color: black;
+    color: $fontcolor;
+    font-family: $fontstyle;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18%;
+    grid-auto-rows: minmax(10vh, auto);
+    gap: 2em 2em;
+    justify-content: center;
+}
+
+.column{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: black solid 2pt;
+}
+
+.pic{
+    width: 100%;
+    height: 40%;
+    
+}
+
+.description{
+    border: black solid 2pt;
+    border-top: $fontcolor;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.food{
+    color: black;
+    font-size: 15pt;
+    text-align: center;
+
+}
+
+p{
+    margin: 5%;
+}
+
+h3{
+    text-align: end;
+    margin: 2%;
+}
+
+.container_two{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-auto-rows: minmax(10vh, auto);
+    gap: 2em 2em;
+    justify-content: center;
+}
+
+.container_two img{
+    width: 100%;
+    height: 100%;
+}
+
+#aboutus{
+    border-top: black solid 1pt;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    font-family: $fontstyle;
+}
+
+#reviews{
+    border-top: black solid 1pt;
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.rating{
+    margin: 2%;
+    text-align: center;
+    border-bottom: black solid 1pt;
+    padding-bottom: 4%;
+    margin-right: 18%;
+    margin-left: 18%;
+    
+}
+.num-rat{
+    margin: 2%;
+        
+}
+span{
+    color: yellow;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: $fontcolor;
+    font-size: 4em;
+    padding: 5vh;
+    font-family: 'Rock Salt', cursive;
+
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: $fontcolor;
+    padding: 1vh;
+    font-size: 2em;
+    
+}
+
+/*Tablet*/
+@media only screen and (max-width: 480px) {
+    .container{
+        grid-template-columns: 60%;
+    }  
+
+    .name{
+        text-align: center;
+    }
+
+    .logo{
+        text-align: center;
+        font-size: 25pt;
+    }
+    .foot{
+        text-align: center;
+        font-size: 20pt;
+    }
+    
+    
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 780px) {
+    .container{
+        grid-template-columns: 40% 40%;
+    }
+
+}
+
+
+
