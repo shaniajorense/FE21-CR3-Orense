@@ -29,13 +29,13 @@ body {
 }
 
 .name {
-  font-size: 5em;
+  font-size: 4em;
   margin-top: 0;
   margin-bottom: 0.05em;
   font-family: 'Rock Salt', cursive;
 }
 
-h2 {
+.slogan {
   font-family: 'Rock Salt', cursive;
 }
 
@@ -55,23 +55,25 @@ h2 {
 }
 
 /*This is the nav*/
+.nav {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  font-family: "Rock Salt", cursive;
+}
+
 ul {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: black;
-  margin-bottom: 0%;
-  margin-top: 0%;
-  text-align: center;
-  margin-left: 0%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 li {
-  margin: 6vh;
+  margin: 3vh;
   font-size: 14pt;
 }
 
@@ -111,9 +113,9 @@ li a {
 .column {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow: hidden;
   border: black solid 2pt;
+  border-radius: 15px;
 }
 
 .pic {
@@ -167,6 +169,60 @@ h3 {
   margin-right: 10vh;
 }
 
+.container-three {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 40%;
+      grid-template-columns: 40% 40%;
+  grid-auto-rows: minmax(10vh, auto);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.address {
+  text-align: center;
+}
+
+.address-head1 {
+  margin: 6px;
+  font-size: 15pt;
+  font-family: "Rock Salt", cursive;
+}
+
+.address-head {
+  margin: 10px;
+  font-size: 15pt;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-head {
+  font-size: 15pt;
+  margin: 10px;
+  margin-top: 70px;
+}
+
+.container_four {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: minmax(10vh, auto);
+  gap: 2em 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+}
+
+.container_four img {
+  width: 100%;
+  height: 100%;
+}
+
 .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +254,7 @@ h3 {
   margin: 2%;
 }
 
-span {
+.stars {
   color: yellow;
 }
 
